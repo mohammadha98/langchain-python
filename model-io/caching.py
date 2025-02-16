@@ -18,6 +18,6 @@ from langchain_community.cache import InMemoryCache
 
 set_llm_cache(InMemoryCache())
 
-llm = ChatOpenAI()
+llm = ChatOpenAI(model="gpt-4o-mini")
 
 llm.invoke("What is the meaning of life?")

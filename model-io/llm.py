@@ -24,10 +24,5 @@ api_key = os.getenv("OPENAI_API_KEY")
 
 llm = ChatOpenAI(openai_api_key=api_key, model="gpt-4", max_tokens=1000, temperature=0.1)
 
-result=llm.generate(["What is the meaning of life?","what happend when we die?"])
+# result=llm.generate(["What is the meaning of life?","what happend when we die?"])
 
-
-
-print(result.model_json_schema())
-
-print(result.generations)
