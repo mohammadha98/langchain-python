@@ -2,7 +2,7 @@ from langchain_core.prompts import  AIMessagePromptTemplate,SystemMessagePromptT
 from langchain.prompts import SemanticSimilarityExampleSelector
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
-from langchain_core import SystemMessage
+from langchain_core.messages import SystemMessage
 from langchain_core.prompts.few_shot import FewShotChatMessagePromptTemplate
 
 from llm import llm
